@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh Das</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Thanks for visiting my website</h2>
+            <h2>-Rajesh Das</h2>
+
+            <br>
+            <h3 style="color: red;">{{ prediction_text }}<h3>
+            
+            <h3>Pclass</h3>
+            <input placeholder="choose-(1,2,3)"  name="Pclass" type="number ">
+            
+            <h3>Sex</h3>
+            <input  placeholder="male: 0, female: 1" name="Sex" type="number ">
+
+            <h3>Age</h3>
+            <input placeholder="give your age" name="Age" type="number ">
+
+            <h3>SibSp</h3>
+            <input placeholder="choose-(0, 1, 2, 3, 4, 5, 8)"  name="SibSp" type="number ">
+
+            <h3>Parch</h3>
+            <input placeholder="choose-(0, 1, 2, 3, 4, 5, 6)"  name="Parch" type="number ">
+
+            <h3>Fare</h3>
+            <input placeholder="give your fare" name="Fare" type="number ">
+
+            
+            <!-- <h3>rate_marriage</h3><br>
+            <select name="rate_marriage"  required="required">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select> -->
+
+
+            
+           
+            
+           
+            
+            <br>
+            <button id="sub" type="submit ">predict affair</button>
+           
+
+
+
+
+        </form>
+
+        
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: coral;
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
