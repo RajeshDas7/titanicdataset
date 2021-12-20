@@ -1,5 +1,5 @@
 hey every one.
 
-i have bulit a website based on Statsmodels afair dataset.
+i have bulit a website based on titanic dataset.
 
 feel free to visit my website.
